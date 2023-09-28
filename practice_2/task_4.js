@@ -1,10 +1,9 @@
 'use strict';
 
-let pow = 1;
-function powNum(x, n){
+const powNum = (x, n) => {
+    let pow = 1;
     for (let i = 0; i < n; i++){
-        pow = pow * x;
-        console.log('1')
+        pow *= x;
     }
     return pow;
 }
